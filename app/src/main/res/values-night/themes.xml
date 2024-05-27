@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MagicRecipes" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Цвет фона -->
+        <item name="android:windowBackground">#21365C</item>
+
+        <!-- Цвет основных кнопок -->
+        <item name="colorPrimary">#275AB9</item>
+
+        <!-- Цвет второстепенных кнопок -->
+        <item name="colorSecondary">#5475B4</item>
+
+        <!-- Цвет текста -->
+        <item name="android:textColor">#FFFFFF</item>
+        <!-- Animation for activity transitions -->
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+        <!-- Цвет бэка у заголовка -->
+        <item name="BackTittleRect">@color/ZadnikNazvaniaNight</item>
+        <item name="BackBarRect">@color/ZadnikBarNight</item>
+
+        <!-- Остальные цвета из базовой темы -->
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="TittleReg">@color/TittleNight</item>
+
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">@color/ZadnikNazvaniaNight</item>
+    </style>
+
+    <style name="ThemeOverlay.MagicRecipes.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_900</item>
+        <item name="fullscreenTextColor">@color/light_blue_A400</item>
+    </style>
+</resources>

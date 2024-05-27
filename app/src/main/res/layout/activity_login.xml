@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/bartittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:text="🌠Магические🌠\n🌠рецепты🌠"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="21dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bartittle">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="232dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittextback"
+            android:hint="Логин"
+            android:textColor="#5C5C5C"
+            android:textColorHint="#5C5C5C"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="232dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="11dp"
+            android:textColorHint="#5C5C5C"
+            android:textColor="#5C5C5C"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittextback"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingRight="10mm" /> <!-- Здесь значение 32dp можно изменить на ваше усмотрение -->
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/textViewRegister"
+        android:layout_width="191dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="120dp"
+        android:minHeight="48dp"
+        android:onClick="goToRegister"
+        android:text="Регистрация"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="148dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="115dp"
+        android:onClick="loginUser"
+        android:text="Вход"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

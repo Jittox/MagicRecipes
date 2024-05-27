@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "212492985832",
+    "project_id": "magicrecipes-1b357",
+    "storage_bucket": "magicrecipes-1b357.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212492985832:android:2f517ca3d1e3059b1a305d",
+        "android_client_info": {
+          "package_name": "com.example.magicrecipes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtLt6zDEBpE2IQSbHWYSH2SKPPXdWwqsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
