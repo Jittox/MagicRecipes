@@ -15,8 +15,6 @@ public class LoadingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loading_screen);
 
-
-
             // переходим на главный экран через 2.5 секунды
             new Handler().postDelayed(new Runnable() {
                 @Override
@@ -27,7 +25,7 @@ public class LoadingActivity extends AppCompatActivity {
                     overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     finish();
                 }
-            }, 2500);
+            }, 2000);
         }
 
 }

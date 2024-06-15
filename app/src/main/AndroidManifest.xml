@@ -37,7 +37,7 @@
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".FirstDinner"
+            android:name=".ProfileRecipe"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

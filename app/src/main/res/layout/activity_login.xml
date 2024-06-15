@@ -39,7 +39,7 @@
             android:layout_height="55dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/edittextback"
-            android:hint="Логин"
+            android:hint="Почта"
             android:textColor="#5C5C5C"
             android:textColorHint="#5C5C5C"
             android:inputType="textEmailAddress"
@@ -73,6 +73,21 @@
         android:text="Регистрация"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonGuest"
+        android:layout_width="191dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="64dp"
+        android:minHeight="48dp"
+        android:onClick="loginAsGuest"
+        android:text="Войти как гость"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
         tools:ignore="TouchTargetSizeCheck" />

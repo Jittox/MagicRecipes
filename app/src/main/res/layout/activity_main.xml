@@ -91,7 +91,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/previewRecipe"
+                android:id="@+id/previewRecipe1"
                 android:layout_width="250dp"
                 android:layout_height="190dp"
                 android:layout_gravity="center"
@@ -99,7 +99,7 @@
                 android:onClick="firstdinnerOpen"/>
 
             <TextView
-                android:id="@+id/titleRecipe"
+                android:id="@+id/titleRecipe1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -140,12 +140,13 @@
                 android:textSize="20sp" />
             <ImageView
                 android:id="@+id/previewRecipe4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="250dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
                 android:src="@drawable/ic_launcher_background" />
 
             <TextView
-                android:id="@+id/titleRecipe5"
+                android:id="@+id/titleRecipe4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -154,26 +155,12 @@
                 android:textSize="20sp" />
             <ImageView
                 android:id="@+id/previewRecipe5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="250dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
                 android:src="@drawable/ic_launcher_background" />
-
             <TextView
-                android:id="@+id/titleRecipe6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="Название рецепта"
-                android:textSize="20sp" />
-            <ImageView
-                android:id="@+id/previewRecipe6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_launcher_background" />
-
-            <TextView
-                android:id="@+id/titleRecipe7"
+                android:id="@+id/titleRecipe5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"

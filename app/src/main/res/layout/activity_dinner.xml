@@ -5,5 +5,266 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DinnerActivity">
+    <TextView
+        android:id="@+id/backtittle"
+        android:layout_width="414dp"
+        android:layout_height="67dp"
+        android:background="?attr/BackTittleRect"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/bartittle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/backbar"
+        android:layout_width="414dp"
+        android:layout_height="42dp"
+        android:background="?attr/BackBarRect"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backtittle" />
+
+    <TextView
+        android:id="@+id/bartittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="BackToMain"
+        android:gravity="center"
+        android:text="🌠Магические🌠\n🌠рецепты🌠"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/ExitAccButton"
+        android:layout_width="57dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:onClick="ExtAccBttn"
+        app:layout_constraintStart_toStartOf="@+id/backbar"
+        app:layout_constraintTop_toBottomOf="@+id/backtittle"
+        app:srcCompat="@drawable/exitaccount"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/FavButton"
+        android:layout_width="65dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="1dp"
+        android:onClick="FavouriteButton"
+        app:layout_constraintStart_toEndOf="@+id/ExitAccButton"
+        app:layout_constraintTop_toBottomOf="@+id/backtittle"
+        app:srcCompat="@drawable/favouritebutton"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/CatalogButton"
+        android:layout_width="156dp"
+        android:layout_height="39dp"
+        android:onClick="CatalogButton"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toEndOf="@+id/FavButton"
+        app:layout_constraintTop_toBottomOf="@+id/backtittle"
+        app:srcCompat="@drawable/catalogbutton"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/previewRecipe1"
+                android:layout_width="250dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:src="@drawable/firstdinner"
+                android:onClick="firstdinnerOpen"/>
+
+            <TextView
+                android:id="@+id/titleRecipe1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Молодая тушеная капуста"
+                android:textSize="20sp"
+                android:onClick="firstdinnerOpen"/>
+            <ImageView
+                android:id="@+id/previewRecipe2"
+                android:layout_width="250dp"
+                android:onClick="secondDinnerOpen"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:src="@drawable/seconddinner" />
+
+            <TextView
+                android:id="@+id/titleRecipe2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:onClick="secondDinnerOpen"
+                android:text="Паста с запеченными грибами и шпинатом"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/previewRecipe3"
+                android:layout_width="250dp"
+                android:onClick="thirdDinnerOpen"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:src="@drawable/thirddinner" />
+
+            <TextView
+                android:id="@+id/titleRecipe3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:onClick="thirdDinnerOpen"
+                android:text="Остри из говядины в собственном соку"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/previewRecipe4"
+                android:onClick="fourthDinnerOpen"
+                android:layout_width="250dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:src="@drawable/fourthdinner" />
+
+            <TextView
+                android:id="@+id/titleRecipe4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:onClick="fourthDinnerOpen"
+                android:text="Пирог с картошкой и курицей в духовке"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/previewRecipe5"
+                android:onClick="fifthDinnerOpen"
+                android:layout_width="250dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:src="@drawable/fifthdinner" />
+
+            <TextView
+                android:id="@+id/titleRecipe5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:onClick="fifthDinnerOpen"
+                android:text="Рыбно-овощные фрикадельки"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/previewRecipe6"
+                android:onClick="sixthDinnerOpen"
+                android:layout_width="250dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sixthdinner" />
+
+            <TextView
+                android:id="@+id/titleRecipe6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:onClick="sixthDinnerOpen"
+                android:text="Курица в быстром маринаде"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/previewRecipe7"
+                android:onClick="seventhDinnerOpen"
+                android:layout_width="250dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:src="@drawable/seventhdinner" />
+
+            <TextView
+                android:id="@+id/titleRecipe7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:onClick="seventhDinnerOpen"
+                android:text="Кулеш с тушенкой"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/previewRecipe8"
+                android:onClick="eighthDinnerOpen"
+                android:layout_width="250dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:src="@drawable/eighthdinner" />
+
+            <TextView
+                android:id="@+id/titleRecipe8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:onClick="eighthDinnerOpen"
+                android:text="Картофельные зразы с печенью"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/previewRecipe9"
+                android:onClick="ninthBreakfastOpen"
+                android:layout_width="250dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ninthdinner" />
+
+            <TextView
+                android:id="@+id/titleRecipe9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:onClick="ninthBreakfastOpen"
+                android:text="Рис с тушенкой на сковороде"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/previewRecipe10"
+                android:onClick="tenthDinnerOpen"
+                android:layout_width="250dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:src="@drawable/tenthdinner" />
+
+            <TextView
+                android:id="@+id/titleRecipe10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:onClick="tenthDinnerOpen"
+                android:text="Котлеты «Дальневосточные»"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

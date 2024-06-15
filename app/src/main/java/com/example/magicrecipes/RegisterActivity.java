@@ -41,7 +41,6 @@ public class RegisterActivity extends AppCompatActivity {
                             // Регистрация успешна
                             Toast.makeText(RegisterActivity.this, "Регистрация успешна.",
                                     Toast.LENGTH_SHORT).show();
-                            // Можно выполнить дополнительные действия, например, перейти на главный экран
                         } else {
                             // Регистрация не удалась
                             Toast.makeText(RegisterActivity.this, "Ошибка регистрации: " +

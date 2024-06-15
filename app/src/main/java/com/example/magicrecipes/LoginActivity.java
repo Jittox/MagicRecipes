@@ -33,6 +33,12 @@ public class LoginActivity extends AppCompatActivity {
         emailEditText = findViewById(R.id.editTextEmail);
         passwordEditText = findViewById(R.id.editTextPassword);
     }
+    public void loginAsGuest(View view) {
+
+    showMessage("Гостевой вход выполнен.");
+    navigateToMainActivity();
+
+    }
 
     public void loginUser(View view) {
         // Получаем введенные пользователем данные
@@ -123,7 +129,6 @@ public class LoginActivity extends AppCompatActivity {
     private void saveUserState() {
         // Здесь вы сохраняете состояние пользователя, например, его идентификатор или другие данные,
         // которые позволят вам идентифицировать пользователя в будущем.
-        // Например, можно использовать SharedPreferences:
         SharedPreferences.Editor editor = getSharedPreferences("UserData", MODE_PRIVATE).edit();
         editor.putString("userId", mAuth.getCurrentUser().getUid());
         editor.apply();
